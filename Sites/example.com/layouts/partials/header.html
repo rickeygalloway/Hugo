@@ -1,0 +1,43 @@
+<style>
+    .columnNav{
+        float: left;
+        min-width: 100px;
+    }
+    .columnMain{
+        float: right;
+        min-width: 1200px;
+        width: 90%
+    }
+
+    .row:after{
+        content:"";
+        display: table;
+        clear:both;
+    }
+
+    li {
+        list-style: none;
+        margin-left: -25px;
+        padding-bottom: 25px
+    }
+
+    li a {
+        text-decoration: none;
+    }
+</style>
+<div class="row">
+    <div class="columnNav">
+        <img src='https://pbs.twimg.com/profile_images/875029899614007298/NLZrk0Lw_400x400.jpg' height="75" />
+
+        <ul>
+            <li><a href="#">Content</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Workflow</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="home">Administrator</a></li>
+        </ul>
+
+        {{ .Content}}
+        
+    </div>
+    <div class="columnMain">
